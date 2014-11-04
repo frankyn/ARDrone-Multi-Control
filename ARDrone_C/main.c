@@ -30,8 +30,8 @@
 pthread_t threads[2];
 
 static int navdata_udp_socket  = -1;
-static const char ardrone_1_ip[] = "192.168.1.200";
-static const char ardrone_2_ip[] = "192.168.1.202";
+static const char ardrone_1_ip[] = "192.168.43.2";
+static const char ardrone_2_ip[] = "192.168.43.4";
 
 static void navdata_write (int8_t *buffer, int32_t len, char * ardrone_ip )
 {
@@ -118,7 +118,7 @@ void * run_drone ( void * ip ) {
     printf("taking off\n");
     navdata_write ((int8_t*)takeoff, tlen,(char*)ip);
     sleep(5);
-    printf("left\n");
+    /*printf("left\n");
     tlen = strlen(forward);
     navdata_write ((int8_t*)forward, tlen,(char*)ip);
     printf("left\n");
@@ -137,7 +137,7 @@ void * run_drone ( void * ip ) {
     printf("right\n");
     tlen = strlen(backward2);
     navdata_write ((int8_t*)backward2, tlen,(char*)ip);
-    sleep(10);
+    sleep(10);*/
     printf("landing\n");
     navdata_write ((int8_t*)land, llen,(char*)ip);
 
@@ -148,7 +148,7 @@ int main()
 {
     pthread_t rc1, rc2;
     // Create threads
-    rc1 = pthread_create(&threads[0], NULL, run_drone, (void *)ardrone_1_ip); 
+    //rc1 = pthread_create(&threads[0], NULL, run_drone, (void *)ardrone_1_ip); 
     rc2 = pthread_create(&threads[1], NULL, run_drone, (void *)ardrone_2_ip);
 
     pthread_join(rc1, NULL);

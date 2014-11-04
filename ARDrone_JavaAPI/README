@@ -1,0 +1,16 @@
+#Quick README
+
+ARDroneAPI for Java is a very simple version of the robust API protocol used to communicate with an AR. Drone Parrot UAV. It's meant to be used a learning tool for beginning development with the drones. 
+
+
+#Build Instructions
+
+> ant build
+
+#Run Instructions
+
+> ant run
+
+#Environment setup:
+
+

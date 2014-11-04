@@ -1,0 +1,16 @@
+#Quick README
+A quick rendetion of a C program running multiple drones at one time. The code will be improved over time to account necessities, but for now are only used as a reference.
+
+# Configuration:
+
+No straight forward way to configure besides changing the IP addresses to the drones themselves.
+
+# Build:
+
+> make
+
+# Run:
+
+> ./ARDroneTest
+
+

@@ -1,0 +1,23 @@
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="build">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/ArdroneJava.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="ArdroneJava"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="build/jar/ArdroneJava.jar" fork="true"/>
+    </target>
+
+</project>
