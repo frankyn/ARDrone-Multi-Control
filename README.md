@@ -9,29 +9,29 @@ Assumption is drones are brand-new:
 
 > denotes a command in a terminal or telnet capable program.
 
-Download source from: https://sites.google.com/site/androflight/open-source
-Extract source
-cd sourceFile/src/data/ (Keep this directory open during the rest of these instructions)
-Open install.sh (Change to the following)
-ESSID=AndroidAP
-IP=192.168.43.10
-NETMASK=255.255.255.0
-Save install.sh
-Turn on Drone
-Connect to Drone Access Point with a wireless-capable computer.
+1. Download source from: https://sites.google.com/site/androflight/open-source
+2. Extract source
+3. cd sourceFile/src/data/ (Keep this directory open during the rest of these instructions)
+4. Open install.sh (Change to the following)
+5. ESSID=AndroidAP
+6. IP=192.168.43.10
+7. NETMASK=255.255.255.0
+8. Save install.sh
+9. Turn on Drone
+10. Connect to Drone Access Point with a wireless-capable computer.
 
 > telnet 192.168.1.1    (No password required)
 > vi install.sh
 
-Copy and paste the install.sh on our local machine to vi
+11. Copy and paste the install.sh on our local machine to vi
 
 > vi ARAutoConnect.sh
 
-Copy and paste the ARAutoConnect.sh on our local machine to vi
+12. Copy and paste the ARAutoConnect.sh on our local machine to vi
 
 > vi uninstall.sh
 
-Copy and paste the uninstall.sh
+13. Copy and paste the uninstall.sh
 
 > chmod 0755 install.sh
 > chmod 0755 ARAut	oConnect.sh
