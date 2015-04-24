@@ -20,18 +20,12 @@ Assumption is drones are brand-new:
 9. Turn on Drone
 10. Connect to Drone Access Point with a wireless-capable computer.
 
-> telnet 192.168.1.1    (No password required)
-> vi install.sh
+> telnet 192.168.1.1 (No password required)
+> vi install.sh (Copy and paste the install.sh on our local machine to vi)
 
-11. Copy and paste the install.sh on our local machine to vi
+> vi ARAutoConnect.sh (Copy and paste the ARAutoConnect.sh on our local machine to vi)
 
-> vi ARAutoConnect.sh
-
-12. Copy and paste the ARAutoConnect.sh on our local machine to vi
-
-> vi uninstall.sh
-
-13. Copy and paste the uninstall.sh
+> vi uninstall.sh (Copy and paste the uninstall.sh)
 
 > chmod 0755 install.sh
 > chmod 0755 ARAut	oConnect.sh
@@ -40,6 +34,6 @@ Assumption is drones are brand-new:
 > reboot (Disconnection should occur and will then join ESSID once finished)
 
 # Drone Environment References:
-https://sites.google.com/site/androflight/arautoconnect
-http://drones.johnback.us/blog/2013/02/03/programming-multiple-parrot-a-dot-r-drones-on-one-network-with-node-dot-js/
-http://forum.xda-developers.com/galaxy-s2/general/guide-ar-drone-running-samsung-galaxy-s2-t1092455
+1. https://sites.google.com/site/androflight/arautoconnect
+2. http://drones.johnback.us/blog/2013/02/03/programming-multiple-parrot-a-dot-r-drones-on-one-network-with-node-dot-js/
+3. http://forum.xda-developers.com/galaxy-s2/general/guide-ar-drone-running-samsung-galaxy-s2-t1092455
